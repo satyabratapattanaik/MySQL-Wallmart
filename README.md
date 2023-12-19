@@ -1,1 +1,1 @@
-# MySQL-Wallmart
+# MySQL-Walmart Sales Data Analysis
