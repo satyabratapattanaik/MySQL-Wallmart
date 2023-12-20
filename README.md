@@ -98,11 +98,11 @@ The dataset was obtained from the Kaggle Walmart Sales Forecasting Competition. 
 
 1. COGS = unit_price * quantity
 
-   Example with the first row in our DB:
-   Data given:
-   a. unit_price = 45.79 
-   b. quantity = 7 
-   c. COGS = 45.79 * 7 = 320.53 
+   Example with the first row in our DB:<br>
+   Data given:<br>
+   a. unit_price = 45.79 <br>
+   b. quantity = 7 <br>
+   c. COGS = 45.79 * 7 = 320.53 <br>
 
 2. VAT = 5% * COGS = 5% 320.53 = 16.0265 
 
