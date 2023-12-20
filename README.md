@@ -108,15 +108,15 @@ The dataset was obtained from the Kaggle Walmart Sales Forecasting Competition. 
 
    is added to the and this is what is billed to the customer.
 
-3. total(gross_sales) = VAT + COGS = 16.0265 + 320.53 = 336.5565 
+3. gross_sales = VAT + COGS = 16.0265 + 320.53 = 336.5565 
 
-4. gross_profit(gross_income) = total(gross_sales) - COGS = 336.5565 - 320.53 = 16.0265
+4. gross_income = gross_sales - COGS = 336.5565 - 320.53 = 16.0265
 
-   Gross Margin is gross profit expressed in percentage of the total(gross_profit / revenue)
-
-5. gross_margin = gross_income / total_revenue = 16.0265 / 336.5565  
+5. gross_margin = gross_income / gross_sales = 16.0265 / 336.5565  
                                                = 0.047619 
                                                \\ approx 4.7619%
+
+   Gross Margin is gross income expressed in percentage of the gross_income / gross_sales
 
 
 
