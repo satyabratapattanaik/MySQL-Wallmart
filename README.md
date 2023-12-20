@@ -24,7 +24,7 @@ The dataset was obtained from the Kaggle Walmart Sales Forecasting Competition. 
 |VAT|The amount of tax on the purchase|FLOAT(6, 4)|
 |total|The total cost of the purchase|DECIMAL(10, 2)|
 |date|The date on which the purchase was made|DATE|
-|time|The time at which the purchase was made|TIMESTAMP|
+|time|The time at which the purchase was made|TIME|
 |payment_method|The total amount paid|DECIMAL(10, 2)|
 |cogs|Cost Of Goods sold|DECIMAL(10, 2)|
 |gross_margin_percentage|Gross margin percentage|FLOAT(11, 9)|
