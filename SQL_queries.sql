@@ -329,3 +329,51 @@ FROM sales
 WHERE branch = "A"
 GROUP BY day_name
 ORDER BY avg_ratings DESC;
+
+
+
+-- ----------------------------------------------------------------
+-- ----------------- Revenue And Profit Calculations --------------
+-- ----------------------------------------------------------------
+
+
+-- Calculation of COGS :-
+
+SELECT 
+invoice_id,
+unit_price * quantity AS COGS
+FROM sales;
+
+-- Calculation of VAT :-
+
+SELECT 
+invoice_id,
+(5 / 100) * COGS AS VAT
+FROM sales;
+
+-- Calculation of Total Gross Sale :-
+
+SELECT
+invoice_id,
+VAT + COGS AS gross_sale
+FROM sales;
+
+-- Calculation of Gross Income :-
+
+SELECT 
+invoice_id,
+(VAT + COGS) - COGS AS gross_income
+FROM sales;
+
+-- Calculation of Gross Margin :-
+
+SELECT
+invoice_id,
+((VAT + COGS) - COGS) / (VAT + COGS) AS gross_margin
+FROM sales;
+
+
+
+-- ----------------------------------------------------------------
+-- ------------------------------ END -----------------------------
+-- ----------------------------------------------------------------
